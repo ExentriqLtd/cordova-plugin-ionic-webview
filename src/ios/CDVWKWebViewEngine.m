@@ -755,7 +755,6 @@ static void * KVOContext = &KVOContext;
     NSString * path = [command argumentAtIndex:0];
     NSString * cordovaPath = [command argumentAtIndex:1];
     [self setServerPath:path :cordovaPath];
-    [(WKWebView*)_engineWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.CDV_LOCAL_SERVER]]];
 }
 
 -(void)setServerPath:(NSString *) path :(NSString *) cordovaPath
