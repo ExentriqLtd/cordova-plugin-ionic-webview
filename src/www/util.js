@@ -14,8 +14,8 @@ var WebView = {
     }
     return window.WEBVIEW_SERVER_URL + '/_file_' + url;
   },
-  setServerBasePath: function(path) {
-    exec(null, null, 'IonicWebView', 'setServerBasePath', [path]);
+  setServerBasePath: function(path, cordovaPath) {
+    exec(null, null, 'IonicWebView', 'setServerBasePath', [path, cordovaPath]);
   },
   getServerBasePath: function(callback) {
     exec(callback, null, 'IonicWebView', 'getServerBasePath', []);
